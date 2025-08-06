@@ -3,6 +3,8 @@ from flask import Flask, request, render_template, session, url_for, redirect
 import joblib
 import random
 import json
+import os
+
 
 # Load model and vectorizer
 model = joblib.load("model/emotion_model.pkl")
@@ -56,4 +58,6 @@ def clear():
     return redirect(url_for("index"))  # Redirect to main page
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
