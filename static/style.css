@@ -1,0 +1,145 @@
+/* Overall dark-themed page style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Glassmorphism chat container with dark overlay */
+.chat-container {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    max-width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Neon title text */
+.chat-title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #00ffe7;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 0 0 8px #00ffe7, 0 0 12px #00ffe7;
+}
+
+/* Chat box area with semi-transparent dark */
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    scroll-behavior: smooth;
+    color: #fff;
+}
+
+/* Message bubble style */
+.chat-message {
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 20px;
+    max-width: 85%;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    color: #fff;
+}
+
+/* User message bubble */
+.chat-message.user {
+    background-color: #3a3f58;
+    align-self: flex-end;
+    text-align: right;
+    margin-left: auto;
+    box-shadow: 0 0 10px rgba(0, 255, 234, 0.3);
+}
+
+/* Bot message bubble */
+.chat-message.bot {
+    background-color: #2e3d4f;
+    align-self: flex-start;
+    box-shadow: 0 0 10px rgba(0, 153, 255, 0.2);
+}
+
+/* Chat form row */
+.chat-form {
+    display: flex;
+    gap: 10px;
+}
+
+/* Input field dark mode */
+.chat-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 0.95rem;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Neon send button */
+.chat-form button {
+    background-color: #00ffe7;
+    color: #000;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+    box-shadow: 0 0 8px #00ffe7;
+}
+
+.chat-form button:hover {
+    background-color: #00c9b7;
+    transform: scale(1.05);
+}
+
+/* Clear chat button with red glow */
+.clear-btn {
+    background-color: #ff3b3b;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 0 10px rgba(255, 59, 59, 0.4);
+}
+
+.clear-btn:hover {
+    background-color: #cc2a2a;
+    transform: scale(1.05);
+}
+
+/* Stylish scrollbar */
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+
+
