@@ -1,0 +1,1 @@
+This project is an AI-powered Mental Health Chatbot designed to interact with users and respond based on detected emotions. It uses Natural Language Processing (NLP) and Machine Learning (ML) techniques to understand the user's input and respond appropriately. It supports emotion detection and provides encouraging, empathetic responses enhanced with emojis.
