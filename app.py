@@ -4,6 +4,8 @@ import joblib
 import random
 import json
 import os
+from keep_alive import start_keep_alive
+start_keep_alive()
 
 
 # Load model and vectorizer
